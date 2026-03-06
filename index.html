@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neteau - Limpieza Industrial Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-broom text-3xl text-blue-600"></i>
+                    <span class="text-2xl font-bold text-gray-800">Ne<span class="text-blue-600">teau</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Inicio</a>
+                    <a href="#quienes-somos" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Quiénes Somos</a>
+                    <a href="#servicios" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Servicios</a>
+                    <a href="#contacto" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Contacto</a>
+                </div>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold flex items-center space-x-2 transition-all transform hover:scale-105">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <button id="menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-3">
+                <a href="#inicio" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-2">Inicio</a>
+                <a href="#quienes-somos" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-2">Quiénes Somos</a>
+                <a href="#servicios" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-2">Servicios</a>
+                <a href="#contacto" class="mobile-nav-link text-gray-700 hover:text-blue-600 py-2">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-600/80"></div>
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Industrial Cleaning" class="w-full h-full object-cover">
+        </div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
+                    Limpieza Industrial <br>de <span class="text-yellow-400">Alta Resistencia</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-100">Expertos en soluciones de limpieza para la industria. Más de 15 años garantizando espacios impecables y seguros.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-center transition-all transform hover:scale-105 shadow-lg">
+                        Solicitar Presupuesto
+                    </a>
+                    <a href="#servicios" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-4 rounded-lg font-semibold text-center transition-all">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="quienes-somos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Quiénes <span class="text-blue-600">Somos</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-semibold text-gray-800">Líderes en limpieza industrial</h3>
+                    <p class="text-gray-600 leading-relaxed">The Kleaner nació en 2008 con la misión de revolucionar el sector de la limpieza industrial. Hoy somos referentes en el mercado, ofreciendo soluciones innovadoras y sostenibles para todo tipo de industrias.</p>
+                    <p class="text-gray-600 leading-relaxed">Nuestro equipo está formado por profesionales altamente capacitados que utilizan la última tecnología y productos ecológicos para garantizar los más altos estándares de limpieza y seguridad.</p>
+                    <div class="grid grid-cols-3 gap-4 pt-6">
+                        <div class="text-center stat-item">
+                            <div class="text-4xl font-bold text-blue-600">
+                                <span class="counter" data-target="15">0</span>+
+                            </div>
+                            <div class="text-gray-600">Años de experiencia</div>
+                        </div>
+                        <div class="text-center stat-item">
+                            <div class="text-4xl font-bold text-blue-600">
+                                <span class="counter" data-target="500">0</span>+
+                            </div>
+                            <div class="text-gray-600">Clientes satisfechos</div>
+                        </div>
+                        <div class="text-center stat-item">
+                            <div class="text-4xl font-bold text-blue-600">
+                                <span class="counter" data-target="100">0</span>%
+                            </div>
+                            <div class="text-gray-600">Profesionales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Equipo de limpieza" class="rounded-lg shadow-xl h-64 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1581578731667-e396c7c7bd0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Limpieza industrial" class="rounded-lg shadow-xl h-64 w-full object-cover mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestros <span class="text-blue-600">Servicios</span></h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Soluciones integrales adaptadas a las necesidades específicas de tu industria</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-industry text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Limpieza de Naves Industriales</h3>
+                    <p class="text-gray-600 mb-4">Limpieza profunda de instalaciones industriales, maquinaria y áreas de producción.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Equipos especializados</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Productos industriales</li>
+                    </ul>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-oil-can text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Limpieza de Tanques y Depósitos</h3>
+                    <p class="text-gray-600 mb-4">Servicio especializado para limpieza de tanques de almacenamiento y depósitos industriales.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Certificaciones ISO</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Protocolos de seguridad</li>
+                    </ul>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-wind text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Limpieza de Conductos</h3>
+                    <p class="text-gray-600 mb-4">Limpieza y desinfección de sistemas de ventilación y conductos de aire.</p>
+                    <ul class="text-gray-500 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Mejora calidad del aire</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Eliminación de partículas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contacto -->
+<section id="contacto" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Contáctanos <span class="text-blue-600">Ahora</span></h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Estamos disponibles 24/7 para atender tus necesidades de limpieza industrial</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto">
+            <!-- Tarjeta de Contacto Principal -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                    <!-- Información de Contacto -->
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 text-white">
+                        <div class="mb-8">
+                            <i class="fas fa-broom text-4xl mb-4 opacity-80"></i>
+                            <h3 class="text-2xl font-bold mb-2">Neteau</h3>
+                            <p class="text-blue-100">Limpieza Industrial Profesional</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-semibold border-b border-blue-400 pb-2">Información de Contacto</h4>
+                            
+                            <div class="flex items-start space-x-4 group hover:bg-blue-700 p-3 rounded-lg transition-all">
+                                <i class="fas fa-phone text-xl mt-1"></i>
+                                <div>
+                                    <p class="text-sm text-blue-200">Teléfono</p>
+                                    <p class="font-semibold">+1 819 434 6515</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4 group hover:bg-blue-700 p-3 rounded-lg transition-all">
+                                <i class="fas fa-envelope text-xl mt-1"></i>
+                                <div>
+                                    <p class="text-sm text-blue-200">Email</p>
+                                    <p class="font-semibold">info@neteau.ca</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4 group hover:bg-blue-700 p-3 rounded-lg transition-all">
+                                <i class="fas fa-map-marker-alt text-xl mt-1"></i>
+                                <div>
+                                    <p class="text-sm text-blue-200">Oficina Central</p>
+                                    <p class="font-semibold">6358 rue Bertrand-Fabi, Sherbrooke</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4 group hover:bg-blue-700 p-3 rounded-lg transition-all">
+                                <i class="fas fa-clock text-xl mt-1"></i>
+                                <div>
+                                    <p class="text-sm text-blue-200">Horario de Atención</p>
+                                    <p class="font-semibold">Lun - Sab: 24/7</p>
+                                    <p class="text-sm text-blue-200">Emergencias: 24 horas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp y Acceso Rápido -->
+                    <div class="p-8 bg-white">
+                        <div class="text-center mb-8">
+                            <div class="inline-block p-4 bg-green-100 rounded-full mb-4">
+                                <i class="fab fa-whatsapp text-5xl text-green-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">WhatsApp Directo</h3>
+                            <p class="text-gray-600">Respuesta inmediata por WhatsApp</p>
+                        </div>
+                        
+                        <!-- Botones de WhatsApp -->
+                        <div class="space-y-4">
+                            <a href="https://wa.me/18194346515?text=Hola%2C%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20limpieza%20industrial" 
+                               target="_blank" 
+                               class="whatsapp-btn block w-full bg-green-500 hover:bg-green-600 text-white text-center px-6 py-4 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-lg">
+                                <i class="fab fa-whatsapp text-xl mr-2"></i>
+                                <span>Contactar por WhatsApp</span>
+                            </a>
+                            
+                            <a href="https://wa.me/18194346515?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto%20para%20limpieza%20industrial" 
+                               target="_blank" 
+                               class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-700 text-center px-6 py-4 rounded-xl font-semibold transition-all">
+                                <i class="fas fa-calculator mr-2"></i>
+                                <span>Solicitar Presupuesto</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Horarios WhatsApp -->
+                        <div class="mt-8 pt-6 border-t border-gray-200">
+                            <div class="flex items-center justify-center space-x-2 text-sm text-gray-500">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span>Tiempo de respuesta promedio: 5 minutos</span>
+                            </div>
+                            <div class="flex items-center justify-center space-x-2 text-sm text-gray-500 mt-2">
+                                <i class="fas fa-users text-blue-500"></i>
+                                <span>+500 clientes satisfechos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarjetas de Contacto Adicionales -->
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <!-- Teléfono -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl text-blue-600"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Llámanos</h4>
+                    <a href="tel:+18194346515" class="text-blue-600 hover:text-blue-700">+1 234 567 890</a>
+                </div>
+                
+                <!-- Email -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-blue-600"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Email</h4>
+                    <a href="mailto:info@neteau.com" class="text-blue-600 hover:text-blue-700">info@thekleaner.com</a>
+                </div>
+                
+                <!-- Ubicación -->
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">Visítanos</h4>
+                    <p class="text-gray-600">6358 rue Bertrand-Fabi, Sherbrooke</p>
+                </div>
+            </div>
+            
+            <!-- Mapa (opcional) -->
+<!-- Mapa con iframe estándar de Google Maps -->
+<div class="mt-8 bg-white rounded-xl shadow-md overflow-hidden h-96">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3845272938723!2d-71.89482768444026!3d45.40859927910023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7b8b5e5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2s6358%20Rue%20Bertrand-Fabi%2C%20Sherbrooke%2C%20QC%20J1N%202Z5!5e0!3m2!1ses!2sca!4v1620000000000!5m2!1ses!2sca" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
+            
+            <!-- Mensaje de disponibilidad -->
+            <div class="text-center mt-8">
+                <div class="inline-flex items-center space-x-2 bg-green-100 text-green-700 px-6 py-3 rounded-full">
+                    <i class="fas fa-circle text-xs animate-pulse"></i>
+                    <span>Disponibles 24/7 para emergencias industriales</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <i class="fas fa-broom text-3xl text-blue-400"></i>
+                <span class="text-2xl font-bold">The<span class="text-blue-400">Kleaner</span></span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="social-icon hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon hover:text-blue-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon hover:text-blue-400 transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon hover:text-blue-400 transition-colors"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <!-- Línea divisoria -->
+        <div class="border-t border-gray-800 mt-8 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Copyright -->
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2024 The Kleaner. Todos los derechos reservados.
+                </p>
+                
+                <!-- Desarrollado por -->
+                <p class="text-gray-400 text-sm">
+                    Desarrollado por 
+                    <a href="https://www.ingeniumbright.com" 
+                       target="_blank" 
+                       class="text-blue-400 hover:text-blue-300 font-semibold transition-colors relative group">
+                        IngeniumBright.com
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full"></span>
+                    </a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Información adicional (opcional) -->
+        <div class="mt-6 text-center text-gray-500 text-xs">
+            <p>Expertos en soluciones de limpieza industrial</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
