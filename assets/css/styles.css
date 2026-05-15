@@ -250,3 +250,32 @@ img.loaded {
 .fa-code {
     transition: transform 0.3s ease;
 }
+
+/*footer*/
+    /* Efecto glow para texto (opcional) */
+    @keyframes glowText {
+        0% {
+            text-shadow: 0 0 5px rgba(255, 217, 102, 0.3);
+        }
+        100% {
+            text-shadow: 0 0 15px rgba(255, 217, 102, 0.6);
+        }
+    }
+    
+    .glow-text {
+        animation: glowText 2s infinite alternate;
+    }
+    
+    /* Transiciones suaves */
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+    
+    /* Hover efecto para botón */
+    .hover\:scale-105:hover {
+        transform: scale(1.05);
+    }
+    
+    .hover\:shadow-lg:hover {
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }

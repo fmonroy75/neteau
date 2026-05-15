@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neteau - Limpieza Industrial Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,7 +24,7 @@
                     <a href="#servicios" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Servicios</a>
                     <a href="#contacto" class="nav-link text-gray-700 hover:text-blue-600 transition-colors font-medium">Contacto</a>
                 </div>
-                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold flex items-center space-x-2 transition-all transform hover:scale-105">
+                <a href="https://wa.me/525529076409" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold flex items-center space-x-2 transition-all transform hover:scale-105">
                     <i class="fab fa-whatsapp"></i>
                     <span>WhatsApp</span>
                 </a>
@@ -83,13 +83,13 @@
                     <div class="grid grid-cols-3 gap-4 pt-6">
                         <div class="text-center stat-item">
                             <div class="text-4xl font-bold text-blue-600">
-                                <span class="counter" data-target="15">0</span>+
+                                <span class="counter" data-target="10">0</span>+
                             </div>
                             <div class="text-gray-600">Años de experiencia</div>
                         </div>
                         <div class="text-center stat-item">
                             <div class="text-4xl font-bold text-blue-600">
-                                <span class="counter" data-target="500">0</span>+
+                                <span class="counter" data-target="200">0</span>+
                             </div>
                             <div class="text-gray-600">Clientes satisfechos</div>
                         </div>
@@ -108,56 +108,120 @@
             </div>
         </div>
     </section>
-
-    <!-- Servicios -->
-    <section id="servicios" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestros <span class="text-blue-600">Servicios</span></h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
-                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Soluciones integrales adaptadas a las necesidades específicas de tu industria</p>
+<!-- Servicios Premium -->
+<section id="servicios" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Nuestros <span class="text-blue-600">Servicios</span></h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Soluciones especializadas en limpieza para hogares, oficinas y comercios</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Limpieza de Vidrios -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="assets/img/vidrios.jpg" 
+                         alt="Limpieza de vidrios" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-6">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-wind text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Limpieza de Vidrios</h3>
+                    <p class="text-gray-600 mb-4">Limpieza profesional de vidrios y cristales para hogares, oficinas y comercios.</p>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Vidrios de ventanas y fachadas</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Puertas y muros cortina</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Productos sin dejar residuos</li>
+                    </ul>
+                    <a href="#contacto" class="mt-6 inline-block w-full text-center bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold py-3 rounded-xl transition-all">
+                        Cotizar servicio
+                    </a>
+                </div>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
-                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-industry text-3xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Limpieza de Naves Industriales</h3>
-                    <p class="text-gray-600 mb-4">Limpieza profunda de instalaciones industriales, maquinaria y áreas de producción.</p>
-                    <ul class="text-gray-500 space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Equipos especializados</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Productos industriales</li>
-                    </ul>
+            
+            <!-- Limpieza de Muros -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="assets/img/muros.jpg" 
+                         alt="Limpieza de muros" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
-                <!-- Servicio 2 -->
-                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-oil-can text-3xl text-blue-600"></i>
+                <div class="p-6">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-building text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Limpieza de Tanques y Depósitos</h3>
-                    <p class="text-gray-600 mb-4">Servicio especializado para limpieza de tanques de almacenamiento y depósitos industriales.</p>
-                    <ul class="text-gray-500 space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Certificaciones ISO</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Protocolos de seguridad</li>
+                    <h3 class="text-xl font-bold mb-2">Limpieza de Muros</h3>
+                    <p class="text-gray-600 mb-4">Eliminación de manchas, moho y suciedad acumulada en todo tipo de superficies.</p>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Muros exteriores e interiores</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Eliminación de grafiti</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Limpieza con hidrolavadora</li>
                     </ul>
+                    <a href="#contacto" class="mt-6 inline-block w-full text-center bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold py-3 rounded-xl transition-all">
+                        Cotizar servicio
+                    </a>
                 </div>
-                <!-- Servicio 3 -->
-                <div class="service-card bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all transform hover:-translate-y-2">
-                    <div class="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-wind text-3xl text-blue-600"></i>
+            </div>
+            
+            <!-- Limpieza de Alfombras -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="assets/img/alfombras.webp" 
+                         alt="Limpieza de alfombras" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+
+                </div>
+                <div class="p-6">
+                    <div class="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-couch text-2xl text-blue-600 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Limpieza de Conductos</h3>
-                    <p class="text-gray-600 mb-4">Limpieza y desinfección de sistemas de ventilación y conductos de aire.</p>
-                    <ul class="text-gray-500 space-y-2">
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Mejora calidad del aire</li>
-                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Eliminación de partículas</li>
+                    <h3 class="text-xl font-bold mb-2">Limpieza de Alfombras</h3>
+                    <p class="text-gray-600 mb-4">Limpieza profunda y desinfección de alfombras y tapices.</p>
+                    <ul class="text-gray-500 space-y-2 text-sm">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Limpieza con vapor y extracción</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Eliminación de ácaros</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Secado rápido</li>
                     </ul>
+                    <a href="#contacto" class="mt-6 inline-block w-full text-center bg-gray-100 hover:bg-blue-600 text-gray-700 hover:text-white font-semibold py-3 rounded-xl transition-all">
+                        Cotizar servicio
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
+        
+        <!-- Beneficios Adicionales -->
+        <div class="mt-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
+            <div class="grid md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <i class="fas fa-truck text-3xl mb-3"></i>
+                    <h4 class="font-bold">Servicio a Domicilio</h4>
+                    <p class="text-sm text-blue-100">Vamos a tu hogar u oficina</p>
+                </div>
+                <div>
+                    <i class="fas fa-id-card text-3xl mb-3"></i>
+                    <h4 class="font-bold">Personal Certificado</h4>
+                    <p class="text-sm text-blue-100">Técnicos especializados</p>
+                </div>
+                <div>
+                    <i class="fas fa-hand-holding-heart text-3xl mb-3"></i>
+                    <h4 class="font-bold">Seguro de Responsabilidad</h4>
+                    <p class="text-sm text-blue-100">Tranquilidad garantizada</p>
+                </div>
+                <div>
+                    <i class="fas fa-calendar-check text-3xl mb-3"></i>
+                    <h4 class="font-bold">Agenda Flexible</h4>
+                    <p class="text-sm text-blue-100">Horarios a tu medida</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Contacto -->
 <section id="contacto" class="py-20 bg-gray-50">
     <div class="container mx-auto px-6">
@@ -194,7 +258,7 @@
                                 <i class="fas fa-envelope text-xl mt-1"></i>
                                 <div>
                                     <p class="text-sm text-blue-200">Email</p>
-                                    <p class="font-semibold">info@neteau.ca</p>
+                                    <p class="font-semibold">leridavivas@hotmail.com</p>
                                 </div>
                             </div>
                             
@@ -267,7 +331,7 @@
                         <i class="fas fa-phone text-2xl text-blue-600"></i>
                     </div>
                     <h4 class="font-semibold text-gray-800 mb-2">Llámanos</h4>
-                    <a href="tel:+18194346515" class="text-blue-600 hover:text-blue-700">+1 234 567 890</a>
+                    <a href="tel:+18194346515" class="text-blue-600 hover:text-blue-700">+52 552 907 6409</a>
                 </div>
                 
                 <!-- Email -->
@@ -276,7 +340,7 @@
                         <i class="fas fa-envelope text-2xl text-blue-600"></i>
                     </div>
                     <h4 class="font-semibold text-gray-800 mb-2">Email</h4>
-                    <a href="mailto:info@neteau.com" class="text-blue-600 hover:text-blue-700">info@thekleaner.com</a>
+                    <a href="mailto:leridavivas@hotmail.com" class="text-blue-600 hover:text-blue-700">leridavivas@hotmail.com</a>
                 </div>
                 
                 <!-- Ubicación -->
@@ -314,13 +378,13 @@
 </section>
 
 <!-- Footer -->
-
-<footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-6">
+<footer class="bg-gray-900 text-white">
+    <!-- Parte principal del footer -->
+    <div class="container mx-auto px-6 py-12">
         <div class="flex flex-col md:flex-row justify-between items-center">
             <div class="flex items-center space-x-2 mb-4 md:mb-0">
                 <i class="fas fa-broom text-3xl text-blue-400"></i>
-                <span class="text-2xl font-bold">The<span class="text-blue-400">Kleaner</span></span>
+                <span class="text-2xl font-bold">Ne<span class="text-blue-400">teau</span></span>
             </div>
             <div class="flex space-x-6">
                 <a href="#" class="social-icon hover:text-blue-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
@@ -335,29 +399,58 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <!-- Copyright -->
                 <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                    &copy; 2024 The Kleaner. Todos los derechos reservados.
-                </p>
-                
-                <!-- Desarrollado por -->
-                <p class="text-gray-400 text-sm">
-                    Desarrollado por 
-                    <a href="https://www.ingeniumbright.com" 
-                       target="_blank" 
-                       class="text-blue-400 hover:text-blue-300 font-semibold transition-colors relative group">
-                        IngeniumBright.com
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all group-hover:w-full"></span>
-                    </a>
+                    &copy; 2026 Neteau. Todos los derechos reservados.
                 </p>
             </div>
         </div>
         
-        <!-- Información adicional (opcional) -->
+        <!-- Información adicional -->
         <div class="mt-6 text-center text-gray-500 text-xs">
-            <p>Expertos en soluciones de limpieza industrial</p>
+            <p>Expertos en soluciones de limpieza</p>
+        </div>
+    </div>
+    
+    <!-- SECCIÓN INGENIUMBRIGHT - Corregida -->
+    <div class="w-full bg-gradient-to-r from-[#0A0F1F] via-[#121A2F] to-[#0A0F1F] border-t border-[#FFD966]/30">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                <!-- Logo IngeniumBright -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FFD966] to-[#E8922A] flex items-center justify-center shadow-lg">
+                        <i class="fas fa-code text-[#0A0F1F] text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-[#FFD966] text-xs font-bold tracking-wider">DESARROLLO TECNOLÓGICO</p>
+                        <h3 class="text-white font-black text-lg md:text-xl">IngeniumBright</h3>
+                    </div>
+                </div>
+                
+                <!-- Botón y estadística -->
+                <div class="flex flex-col sm:flex-row gap-4 items-center">
+                    <a href="https://www.ingeniumbright.com" target="_blank" rel="noopener noreferrer" 
+                       class="bg-gradient-to-r from-[#FFD966] to-[#E8922A] text-[#0A0F1F] font-black px-6 py-2.5 rounded-full text-sm flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                        🚀 CONTRATAR SERVICIOS <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <span class="text-gray-400 text-xs flex items-center gap-1">
+                        <i class="fas fa-chart-line text-[#FFD966]"></i> +120 proyectos exitosos
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Línea inferior con crédito -->
+            <div class="flex flex-wrap justify-center md:justify-between items-center gap-3 mt-6 pt-4 border-t border-white/10 text-xs text-gray-400">
+                
+                <a href="https://www.ingeniumbright.com" target="_blank" 
+                   class="hover:text-[#FFD966] transition flex items-center gap-1">
+                    Desarrollado con <i class="fas fa-heart text-red-400 text-xs"></i> por IngeniumBright
+                </a>
+            </div>
         </div>
     </div>
 </footer>
 
-    <script src="script.js"></script>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
