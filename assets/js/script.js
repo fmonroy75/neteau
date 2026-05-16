@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observar la sección de estadísticas
-    const statsSection = document.querySelector('#quienes-somos .stat-item');
+    const statsSection = document.querySelector('#qui-sommes-nous .stat-item');
     if (statsSection) {
         observer.observe(statsSection.parentElement);
     }
